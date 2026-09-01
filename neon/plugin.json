@@ -1,0 +1,55 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "neon",
+  "version": "1.0.0",
+  "description": "Inspect Neon projects and database structure, and run permission-gated read-only SQL.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "repository": "https://github.com/useopencompany/plugins/tree/main/neon",
+  "license": "MIT",
+  "keywords": ["neon", "postgres", "database", "sql"],
+  "extensions": {
+    "so.opencompany.capabilities": {
+      "read": {
+        "label": "Inspect Neon structure",
+        "defaultMode": "on",
+        "tools": [
+          "list_organizations",
+          "list_projects",
+          "describe_project",
+          "list_project_permissions",
+          "list_project_members",
+          "list_regions",
+          "list_operations",
+          "get_operation",
+          "list_branches",
+          "get_branch",
+          "get_default_branch",
+          "describe_branch",
+          "compare_database_schema",
+          "list_postgres_roles",
+          "get_postgres_role",
+          "list_postgres_databases",
+          "get_postgres_database",
+          "get_database_tables",
+          "describe_table_schema",
+          "search",
+          "fetch"
+        ]
+      },
+      "query": {
+        "label": "Query database data",
+        "defaultMode": "ask",
+        "tools": [
+          "run_sql",
+          "run_sql_transaction",
+          "explain_sql_statement",
+          "list_slow_queries",
+          "inspect_database"
+        ]
+      }
+    }
+  }
+}
