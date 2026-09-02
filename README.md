@@ -9,6 +9,7 @@ commit SHA so installation is reproducible and reviewable.
 
 | Plugin | Package URL |
 | --- | --- |
+| Better Stack | `https://github.com/useopencompany/plugins/tree/main/betterstack` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 
 For example, clients that accept a source URL can install Linear from the package URL above. The
