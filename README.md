@@ -13,6 +13,7 @@ commit SHA so installation is reproducible and reviewable.
 | Better Stack | `https://github.com/useopencompany/plugins/tree/main/betterstack` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 | Neon | `https://github.com/useopencompany/plugins/tree/main/neon` |
+| Slack | `https://github.com/useopencompany/plugins/tree/main/slack` |
 
 For example, clients that accept a source URL can install one of the packages above. The exact
 command or UI varies by client because Agent Plugins standardizes the package, not the client's
