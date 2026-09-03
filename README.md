@@ -15,6 +15,7 @@ commit SHA so installation is reproducible and reviewable.
 | Google Calendar | `https://github.com/useopencompany/plugins/tree/main/google-calendar` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 | Neon | `https://github.com/useopencompany/plugins/tree/main/neon` |
+| SigNoz | `https://github.com/useopencompany/plugins/tree/main/signoz` |
 | Slack | `https://github.com/useopencompany/plugins/tree/main/slack` |
 | YC Advise | `https://github.com/useopencompany/plugins/tree/main/yc-advise` |
 
