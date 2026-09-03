@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "yc-advise",
+  "version": "1.0.0",
+  "description": "Independent YC-style startup advice and structured founder office hours, based on public principles and not affiliated with Y Combinator.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://github.com/useopencompany/plugins/tree/main/yc-advise",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/yc-advise",
+  "license": "MIT",
+  "keywords": ["startups", "founders", "office-hours", "product-market-fit", "fundraising"]
+}

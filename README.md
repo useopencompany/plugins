@@ -12,9 +12,11 @@ commit SHA so installation is reproducible and reviewable.
 | GitHub | `https://github.com/useopencompany/plugins/tree/main/github` |
 | Better Stack | `https://github.com/useopencompany/plugins/tree/main/betterstack` |
 | Gmail | `https://github.com/useopencompany/plugins/tree/main/gmail` |
+| Google Calendar | `https://github.com/useopencompany/plugins/tree/main/google-calendar` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 | Neon | `https://github.com/useopencompany/plugins/tree/main/neon` |
 | Slack | `https://github.com/useopencompany/plugins/tree/main/slack` |
+| YC Advise | `https://github.com/useopencompany/plugins/tree/main/yc-advise` |
 
 For example, clients that accept a source URL can install one of the packages above. The exact
 command or UI varies by client because Agent Plugins standardizes the package, not the client's
