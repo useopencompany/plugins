@@ -1,0 +1,57 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gmail",
+  "version": "1.0.0",
+  "description": "Search and read Gmail, create drafts, and organize messages through Google's hosted MCP server.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/gmail",
+  "license": "MIT",
+  "keywords": ["gmail", "email", "google-workspace", "drafts", "labels"],
+  "extensions": {
+    "so.opencompany.capabilities": {
+      "query": {
+        "label": "Read Gmail",
+        "defaultMode": "ask",
+        "tools": [
+          "list_drafts",
+          "get_draft",
+          "get_thread",
+          "get_message",
+          "search_threads",
+          "list_labels"
+        ]
+      },
+      "draft": {
+        "label": "Create drafts",
+        "defaultMode": "ask",
+        "tools": ["create_draft"]
+      },
+      "write": {
+        "label": "Organize Gmail",
+        "defaultMode": "ask",
+        "tools": [
+          "label_thread",
+          "unlabel_thread",
+          "apply_sensitive_thread_label",
+          "trash_thread",
+          "untrash_thread",
+          "mark_thread_spam",
+          "unmark_thread_spam",
+          "label_message",
+          "update_message_labels",
+          "unlabel_message",
+          "apply_sensitive_message_label",
+          "trash_message",
+          "untrash_message",
+          "mark_message_spam",
+          "unmark_message_spam",
+          "create_label"
+        ]
+      }
+    }
+  }
+}
