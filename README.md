@@ -13,6 +13,7 @@ commit SHA so installation is reproducible and reviewable.
 | Better Stack | `https://github.com/useopencompany/plugins/tree/main/betterstack` |
 | Gmail | `https://github.com/useopencompany/plugins/tree/main/gmail` |
 | Google Calendar | `https://github.com/useopencompany/plugins/tree/main/google-calendar` |
+| Google Drive | `https://github.com/useopencompany/plugins/tree/main/google-drive` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 | Neon | `https://github.com/useopencompany/plugins/tree/main/neon` |
 | Render | `https://github.com/useopencompany/plugins/tree/main/render` |
