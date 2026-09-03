@@ -1,9 +1,9 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
-    "google-drive": {
+    "signoz": {
       "type": "streamable-http",
-      "url": "https://api.opencompany.chat/mcp/plugins/google-drive"
+      "url": "https://mcp.us.signoz.cloud/mcp"
     }
   }
 }

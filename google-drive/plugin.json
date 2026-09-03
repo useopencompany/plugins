@@ -7,7 +7,7 @@
     "name": "opencompany",
     "url": "https://opencompany.com"
   },
-  "homepage": "https://developers.google.com/workspace/drive/api/guides/configure-mcp-server",
+  "homepage": "https://docs.opencompany.com/integrations/google-drive",
   "repository": "https://github.com/useopencompany/plugins/tree/main/google-drive",
   "license": "MIT",
   "keywords": ["google-drive", "files", "documents", "storage", "workspace"],
