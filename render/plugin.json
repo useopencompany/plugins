@@ -1,0 +1,61 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "render",
+  "version": "1.0.0",
+  "description": "Inspect Render infrastructure, troubleshoot services, and deploy permission-gated applications and datastores.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://render.com/docs/mcp-server",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/render",
+  "license": "MIT",
+  "keywords": ["render", "hosting", "deployment", "infrastructure", "observability"],
+  "extensions": {
+    "so.opencompany.capabilities": {
+      "read": {
+        "label": "Inspect Render resources",
+        "defaultMode": "on",
+        "tools": [
+          "get_deploy",
+          "get_key_value",
+          "get_postgres",
+          "get_selected_workspace",
+          "get_service",
+          "list_deploys",
+          "list_key_value",
+          "list_postgres_instances",
+          "list_services",
+          "list_workspaces"
+        ]
+      },
+      "query": {
+        "label": "Read operational data",
+        "defaultMode": "ask",
+        "tools": [
+          "get_metrics",
+          "list_log_label_values",
+          "list_logs",
+          "query_render_postgres"
+        ]
+      },
+      "write": {
+        "label": "Manage Render infrastructure",
+        "defaultMode": "ask",
+        "tools": [
+          "create_cron_job",
+          "create_key_value",
+          "create_postgres",
+          "create_static_site",
+          "create_web_service",
+          "select_workspace",
+          "trigger_deploy",
+          "update_cron_job",
+          "update_environment_variables",
+          "update_static_site",
+          "update_web_service"
+        ]
+      }
+    }
+  }
+}
