@@ -9,13 +9,17 @@ commit SHA so installation is reproducible and reviewable.
 
 | Plugin | Package URL |
 | --- | --- |
+| Attio | `https://github.com/useopencompany/plugins/tree/main/attio` |
 | GitHub | `https://github.com/useopencompany/plugins/tree/main/github` |
 | Better Stack | `https://github.com/useopencompany/plugins/tree/main/betterstack` |
+| Fathom | `https://github.com/useopencompany/plugins/tree/main/fathom` |
 | Gmail | `https://github.com/useopencompany/plugins/tree/main/gmail` |
+| Granola | `https://github.com/useopencompany/plugins/tree/main/granola` |
 | Google Calendar | `https://github.com/useopencompany/plugins/tree/main/google-calendar` |
 | Google Drive | `https://github.com/useopencompany/plugins/tree/main/google-drive` |
 | HubSpot | `https://github.com/useopencompany/plugins/tree/main/hubspot` |
 | Jamie | `https://github.com/useopencompany/plugins/tree/main/jamie` |
+| Latitude | `https://github.com/useopencompany/plugins/tree/main/latitude` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 | Neon | `https://github.com/useopencompany/plugins/tree/main/neon` |
 | PostHog | `https://github.com/useopencompany/plugins/tree/main/posthog` |
