@@ -1,0 +1,53 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "jamie",
+  "version": "1.0.0",
+  "description": "Search Jamie meeting notes, review transcripts and action items, and manage meeting organization with explicit permission controls.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://docs.meetjamie.ai/integrations/mcp",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/jamie",
+  "license": "MIT",
+  "keywords": ["jamie", "meetings", "transcripts", "action-items", "meeting-notes"],
+  "extensions": {
+    "so.opencompany.capabilities": {
+      "read": {
+        "label": "Browse Jamie organization",
+        "defaultMode": "on",
+        "tools": ["list_templates", "list_tags"]
+      },
+      "query": {
+        "label": "Read meeting data",
+        "defaultMode": "ask",
+        "tools": [
+          "list_meetings",
+          "get_meeting",
+          "get_meeting_transcript",
+          "search_meetings",
+          "search_people",
+          "list_tasks"
+        ]
+      },
+      "write": {
+        "label": "Manage Jamie content",
+        "defaultMode": "ask",
+        "tools": [
+          "create_tasks",
+          "upsert_template",
+          "create_tag",
+          "update_tag",
+          "set_tag_sharing",
+          "add_tag_to_meetings",
+          "remove_tag_from_meetings"
+        ]
+      },
+      "draft": {
+        "label": "Permanently delete tags",
+        "defaultMode": "off",
+        "tools": ["delete_tag"]
+      }
+    }
+  }
+}
