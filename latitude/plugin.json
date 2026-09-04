@@ -45,7 +45,7 @@
           "getImport"
         ]
       },
-      "sensitive": {
+      "query": {
         "label": "Read traces and user data",
         "defaultMode": "ask",
         "tools": [
