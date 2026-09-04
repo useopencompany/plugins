@@ -26,7 +26,7 @@
           "check_domain_availability_and_price"
         ]
       },
-      "operations": {
+      "query": {
         "label": "Read operational data",
         "defaultMode": "ask",
         "tools": [
@@ -43,42 +43,31 @@
           "get_toolbar_thread"
         ]
       },
-      "deploy": {
-        "label": "Deploy to Vercel",
-        "defaultMode": "ask",
-        "tools": ["deploy_to_vercel", "import-claude-design-from-url"]
-      },
-      "access": {
-        "label": "Share protected deployments",
-        "defaultMode": "ask",
-        "tools": ["get_access_to_vercel_url"]
-      },
-      "collaborate": {
-        "label": "Manage deployment feedback",
+      "draft": {
+        "label": "Deploy, share, and collaborate",
         "defaultMode": "ask",
         "tools": [
+          "deploy_to_vercel",
+          "import-claude-design-from-url",
+          "get_access_to_vercel_url",
           "change_toolbar_thread_resolve_status",
           "reply_to_toolbar_thread",
           "edit_toolbar_message",
           "add_toolbar_reaction"
         ]
       },
-      "purchase": {
-        "label": "Quote and make purchases",
-        "defaultMode": "ask",
+      "write": {
+        "label": "Purchase and administer",
+        "defaultMode": "off",
         "tools": [
           "get_purchase_quote",
           "buy_pro",
           "buy_credits",
           "buy_addon",
           "buy_domain",
-          "get_domain_order"
+          "get_domain_order",
+          "use_vercel_cli"
         ]
-      },
-      "cli": {
-        "label": "Use Vercel CLI guidance",
-        "defaultMode": "ask",
-        "tools": ["use_vercel_cli"]
       }
     }
   }
