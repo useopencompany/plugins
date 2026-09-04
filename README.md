@@ -16,6 +16,7 @@ commit SHA so installation is reproducible and reviewable.
 | Google Drive | `https://github.com/useopencompany/plugins/tree/main/google-drive` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 | Neon | `https://github.com/useopencompany/plugins/tree/main/neon` |
+| PostHog | `https://github.com/useopencompany/plugins/tree/main/posthog` |
 | Render | `https://github.com/useopencompany/plugins/tree/main/render` |
 | SigNoz | `https://github.com/useopencompany/plugins/tree/main/signoz` |
 | Slack | `https://github.com/useopencompany/plugins/tree/main/slack` |
