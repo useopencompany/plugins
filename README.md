@@ -19,6 +19,7 @@ commit SHA so installation is reproducible and reviewable.
 | Render | `https://github.com/useopencompany/plugins/tree/main/render` |
 | SigNoz | `https://github.com/useopencompany/plugins/tree/main/signoz` |
 | Slack | `https://github.com/useopencompany/plugins/tree/main/slack` |
+| X | `https://github.com/useopencompany/plugins/tree/main/x` |
 | YC Advise | `https://github.com/useopencompany/plugins/tree/main/yc-advise` |
 
 For example, clients that accept a source URL can install one of the packages above. The exact
