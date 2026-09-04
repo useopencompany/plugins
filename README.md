@@ -14,6 +14,7 @@ commit SHA so installation is reproducible and reviewable.
 | Gmail | `https://github.com/useopencompany/plugins/tree/main/gmail` |
 | Google Calendar | `https://github.com/useopencompany/plugins/tree/main/google-calendar` |
 | Google Drive | `https://github.com/useopencompany/plugins/tree/main/google-drive` |
+| HubSpot | `https://github.com/useopencompany/plugins/tree/main/hubspot` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 | Neon | `https://github.com/useopencompany/plugins/tree/main/neon` |
 | PostHog | `https://github.com/useopencompany/plugins/tree/main/posthog` |
