@@ -18,6 +18,7 @@ commit SHA so installation is reproducible and reviewable.
 | Google Calendar | `https://github.com/useopencompany/plugins/tree/main/google-calendar` |
 | Google Drive | `https://github.com/useopencompany/plugins/tree/main/google-drive` |
 | HubSpot | `https://github.com/useopencompany/plugins/tree/main/hubspot` |
+| Infisical | `https://github.com/useopencompany/plugins/tree/main/infisical` |
 | Jamie | `https://github.com/useopencompany/plugins/tree/main/jamie` |
 | Latitude | `https://github.com/useopencompany/plugins/tree/main/latitude` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
