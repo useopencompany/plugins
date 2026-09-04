@@ -9,6 +9,7 @@ commit SHA so installation is reproducible and reviewable.
 
 | Plugin | Package URL |
 | --- | --- |
+| Attio | `https://github.com/useopencompany/plugins/tree/main/attio` |
 | GitHub | `https://github.com/useopencompany/plugins/tree/main/github` |
 | Better Stack | `https://github.com/useopencompany/plugins/tree/main/betterstack` |
 | Gmail | `https://github.com/useopencompany/plugins/tree/main/gmail` |
