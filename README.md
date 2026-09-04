@@ -27,6 +27,7 @@ commit SHA so installation is reproducible and reviewable.
 | SigNoz | `https://github.com/useopencompany/plugins/tree/main/signoz` |
 | Slack | `https://github.com/useopencompany/plugins/tree/main/slack` |
 | Stripe | `https://github.com/useopencompany/plugins/tree/main/stripe` |
+| Vercel | `https://github.com/useopencompany/plugins/tree/main/vercel` |
 | X | `https://github.com/useopencompany/plugins/tree/main/x` |
 | YC Advise | `https://github.com/useopencompany/plugins/tree/main/yc-advise` |
 
