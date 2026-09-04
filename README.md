@@ -11,6 +11,7 @@ commit SHA so installation is reproducible and reviewable.
 | --- | --- |
 | GitHub | `https://github.com/useopencompany/plugins/tree/main/github` |
 | Better Stack | `https://github.com/useopencompany/plugins/tree/main/betterstack` |
+| Fathom | `https://github.com/useopencompany/plugins/tree/main/fathom` |
 | Gmail | `https://github.com/useopencompany/plugins/tree/main/gmail` |
 | Google Calendar | `https://github.com/useopencompany/plugins/tree/main/google-calendar` |
 | Google Drive | `https://github.com/useopencompany/plugins/tree/main/google-drive` |
