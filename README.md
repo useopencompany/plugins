@@ -20,6 +20,7 @@ commit SHA so installation is reproducible and reviewable.
 | Render | `https://github.com/useopencompany/plugins/tree/main/render` |
 | SigNoz | `https://github.com/useopencompany/plugins/tree/main/signoz` |
 | Slack | `https://github.com/useopencompany/plugins/tree/main/slack` |
+| Stripe | `https://github.com/useopencompany/plugins/tree/main/stripe` |
 | X | `https://github.com/useopencompany/plugins/tree/main/x` |
 | YC Advise | `https://github.com/useopencompany/plugins/tree/main/yc-advise` |
 
