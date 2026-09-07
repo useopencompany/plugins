@@ -23,6 +23,7 @@ commit SHA so installation is reproducible and reviewable.
 | Latitude | `https://github.com/useopencompany/plugins/tree/main/latitude` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 | Neon | `https://github.com/useopencompany/plugins/tree/main/neon` |
+| Notion | `https://github.com/useopencompany/plugins/tree/main/notion` |
 | PostHog | `https://github.com/useopencompany/plugins/tree/main/posthog` |
 | Render | `https://github.com/useopencompany/plugins/tree/main/render` |
 | SigNoz | `https://github.com/useopencompany/plugins/tree/main/signoz` |
