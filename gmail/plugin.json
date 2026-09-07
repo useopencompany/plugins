@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "gmail",
-  "version": "1.1.0",
-  "description": "Search and read Gmail, create drafts, and organize messages through opencompany's Gmail MCP.",
+  "version": "1.2.0",
+  "description": "Search and read Gmail, download attachments, create drafts, and organize messages through opencompany's Gmail MCP.",
   "author": {
     "name": "opencompany",
     "url": "https://opencompany.com"
@@ -21,6 +21,7 @@
           "get_draft",
           "get_thread",
           "get_message",
+          "download_attachment",
           "search_threads",
           "list_labels"
         ]
