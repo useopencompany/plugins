@@ -28,6 +28,7 @@ commit SHA so installation is reproducible and reviewable.
 | Render | `https://github.com/useopencompany/plugins/tree/main/render` |
 | SigNoz | `https://github.com/useopencompany/plugins/tree/main/signoz` |
 | Slack | `https://github.com/useopencompany/plugins/tree/main/slack` |
+| Supabase | `https://github.com/useopencompany/plugins/tree/main/supabase` |
 | Stripe | `https://github.com/useopencompany/plugins/tree/main/stripe` |
 | Vercel | `https://github.com/useopencompany/plugins/tree/main/vercel` |
 | X | `https://github.com/useopencompany/plugins/tree/main/x` |
