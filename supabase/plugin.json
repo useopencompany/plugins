@@ -10,7 +10,13 @@
   "homepage": "https://supabase.com/docs/guides/ai-tools/mcp",
   "repository": "https://github.com/useopencompany/plugins/tree/main/supabase",
   "license": "MIT",
-  "keywords": ["supabase", "postgres", "database", "sql", "edge-functions"],
+  "keywords": [
+    "supabase",
+    "postgres",
+    "database",
+    "sql",
+    "edge-functions"
+  ],
   "extensions": {
     "so.opencompany.capabilities": {
       "read": {
@@ -34,26 +40,11 @@
           "get_storage_config"
         ]
       },
-      "sensitive": {
-        "label": "Read logs, keys, and function source",
-        "defaultMode": "ask",
-        "tools": [
-          "get_logs",
-          "query_logs",
-          "get_advisors",
-          "get_publishable_keys",
-          "get_edge_function"
-        ]
-      },
-      "sql": {
-        "label": "Execute database SQL",
-        "defaultMode": "ask",
-        "tools": ["execute_sql"]
-      },
       "write": {
-        "label": "Manage databases, functions, and projects",
+        "label": "Run SQL and manage Supabase resources",
         "defaultMode": "ask",
         "tools": [
+          "execute_sql",
           "apply_migration",
           "deploy_edge_function",
           "confirm_cost",
@@ -66,6 +57,17 @@
           "reset_branch",
           "rebase_branch",
           "update_storage_config"
+        ]
+      },
+      "query": {
+        "label": "Read logs, keys, and function source",
+        "defaultMode": "ask",
+        "tools": [
+          "get_logs",
+          "query_logs",
+          "get_advisors",
+          "get_publishable_keys",
+          "get_edge_function"
         ]
       }
     }
