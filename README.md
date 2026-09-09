@@ -11,6 +11,7 @@ commit SHA so installation is reproducible and reviewable.
 | --- | --- |
 | Attio | `https://github.com/useopencompany/plugins/tree/main/attio` |
 | GitHub | `https://github.com/useopencompany/plugins/tree/main/github` |
+| Convex | `https://github.com/useopencompany/plugins/tree/main/convex` |
 | Better Stack | `https://github.com/useopencompany/plugins/tree/main/betterstack` |
 | Fathom | `https://github.com/useopencompany/plugins/tree/main/fathom` |
 | Gmail | `https://github.com/useopencompany/plugins/tree/main/gmail` |

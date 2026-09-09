@@ -1,0 +1,58 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "convex",
+  "version": "1.0.0",
+  "description": "Inspect deployments, query data, and run Convex functions with permission controls.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://docs.convex.dev/ai/convex-mcp-server",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/convex",
+  "license": "MIT",
+  "keywords": [
+    "convex",
+    "database",
+    "functions",
+    "deployment"
+  ],
+  "extensions": {
+    "so.opencompany.capabilities": {
+      "read": {
+        "label": "Inspect Convex deployment",
+        "defaultMode": "on",
+        "tools": [
+          "status",
+          "tables",
+          "functionSpec"
+        ]
+      },
+      "query": {
+        "label": "Read documents and logs",
+        "defaultMode": "ask",
+        "tools": [
+          "data",
+          "logs",
+          "runOneoffQuery"
+        ]
+      },
+      "write": {
+        "label": "Run Convex functions",
+        "defaultMode": "ask",
+        "tools": [
+          "run"
+        ]
+      },
+      "draft": {
+        "label": "Manage environment variables",
+        "defaultMode": "off",
+        "tools": [
+          "envGet",
+          "envList",
+          "envSet",
+          "envRemove"
+        ]
+      }
+    }
+  }
+}
