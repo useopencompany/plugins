@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "google-admin",
+  "version": "1.0.0",
+  "description": "Create Workspace users, set up groups, and add members through opencompany's Google Admin MCP.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://github.com/useopencompany/plugins/tree/main/google-admin",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/google-admin",
+  "license": "MIT",
+  "keywords": [
+    "google-admin",
+    "google-workspace",
+    "directory",
+    "users",
+    "groups"
+  ],
+  "extensions": {
+    "so.opencompany.capabilities": {
+      "query": {
+        "label": "Read directory",
+        "defaultMode": "ask",
+        "tools": [
+          "list_users",
+          "get_user",
+          "list_groups",
+          "get_group",
+          "list_group_members"
+        ]
+      },
+      "write": {
+        "label": "Manage users and groups",
+        "defaultMode": "ask",
+        "tools": [
+          "create_user",
+          "create_group",
+          "update_group",
+          "add_group_member"
+        ]
+      }
+    }
+  }
+}
