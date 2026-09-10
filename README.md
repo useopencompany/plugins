@@ -16,6 +16,7 @@ commit SHA so installation is reproducible and reviewable.
 | Fathom | `https://github.com/useopencompany/plugins/tree/main/fathom` |
 | Gmail | `https://github.com/useopencompany/plugins/tree/main/gmail` |
 | Granola | `https://github.com/useopencompany/plugins/tree/main/granola` |
+| Google Admin | `https://github.com/useopencompany/plugins/tree/main/google-admin` |
 | Google Calendar | `https://github.com/useopencompany/plugins/tree/main/google-calendar` |
 | Google Drive | `https://github.com/useopencompany/plugins/tree/main/google-drive` |
 | HubSpot | `https://github.com/useopencompany/plugins/tree/main/hubspot` |
