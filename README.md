@@ -25,6 +25,8 @@ commit SHA so installation is reproducible and reviewable.
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 | Neon | `https://github.com/useopencompany/plugins/tree/main/neon` |
 | Notion | `https://github.com/useopencompany/plugins/tree/main/notion` |
+| Outlook | `https://github.com/useopencompany/plugins/tree/main/outlook` |
+| Outlook Calendar | `https://github.com/useopencompany/plugins/tree/main/outlook-calendar` |
 | PostHog | `https://github.com/useopencompany/plugins/tree/main/posthog` |
 | Resend | `https://github.com/useopencompany/plugins/tree/main/resend` |
 | Render | `https://github.com/useopencompany/plugins/tree/main/render` |

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "outlook",
+  "version": "1.0.0",
+  "description": "Search and read Outlook mail, download attachments, create drafts, and organize messages through Microsoft Graph.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://github.com/useopencompany/plugins/tree/main/outlook",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/outlook",
+  "license": "MIT",
+  "keywords": [
+    "outlook",
+    "microsoft-365",
+    "microsoft-graph",
+    "email"
+  ],
+  "extensions": {
+    "so.opencompany.capabilities": {
+      "query": {
+        "label": "Read Outlook",
+        "defaultMode": "ask",
+        "tools": [
+          "search_messages",
+          "get_message",
+          "get_conversation",
+          "list_drafts",
+          "list_attachments",
+          "download_attachment",
+          "list_folders"
+        ]
+      },
+      "draft": {
+        "label": "Create drafts",
+        "defaultMode": "ask",
+        "tools": [
+          "create_draft"
+        ]
+      },
+      "write": {
+        "label": "Organize Outlook",
+        "defaultMode": "ask",
+        "tools": [
+          "create_folder",
+          "move_message",
+          "archive_message",
+          "trash_message",
+          "categorize_message"
+        ]
+      }
+    }
+  }
+}
