@@ -29,6 +29,15 @@
           "get_meeting_transcript"
         ]
       }
-    }
+    },
+    "so.opencompany.events": [
+      {
+        "id": "meeting.notes_ready",
+        "label": "Meeting notes ready",
+        "description": "Starts a workflow once Granola finishes the AI summary for a meeting.",
+        "delivery": "poll",
+        "filters": []
+      }
+    ]
   }
 }
