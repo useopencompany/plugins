@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "linear",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Plan, triage, and report on work in Linear with server-side tools and focused workflows.",
   "author": {
     "name": "opencompany",
@@ -9,7 +9,12 @@
   },
   "repository": "https://github.com/useopencompany/plugins/tree/main/linear",
   "license": "MIT",
-  "keywords": ["linear", "issues", "triage", "project-management"],
+  "keywords": [
+    "linear",
+    "issues",
+    "triage",
+    "project-management"
+  ],
   "extensions": {
     "so.opencompany.capabilities": {
       "read": {
@@ -29,7 +34,10 @@
       "write": {
         "label": "Manage issues",
         "defaultMode": "ask",
-        "tools": ["save_issue", "save_comment"]
+        "tools": [
+          "save_issue",
+          "save_comment"
+        ]
       }
     },
     "so.opencompany.events": [
@@ -44,7 +52,39 @@
             "label": "Team",
             "kind": "integration_resource",
             "resourceType": "team",
-            "required": true
+            "required": false
+          },
+          {
+            "id": "status",
+            "label": "Status",
+            "kind": "choice",
+            "required": false,
+            "options": [
+              {
+                "id": "triage",
+                "name": "Triage"
+              },
+              {
+                "id": "backlog",
+                "name": "Backlog"
+              },
+              {
+                "id": "unstarted",
+                "name": "Todo"
+              },
+              {
+                "id": "started",
+                "name": "In progress"
+              },
+              {
+                "id": "completed",
+                "name": "Done"
+              },
+              {
+                "id": "canceled",
+                "name": "Canceled"
+              }
+            ]
           }
         ]
       }
