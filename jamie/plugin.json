@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "jamie",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Search Jamie meeting notes, review transcripts and action items, and manage meeting organization with explicit permission controls.",
   "author": {
     "name": "opencompany",
@@ -48,6 +48,26 @@
         "defaultMode": "off",
         "tools": ["delete_tag"]
       }
-    }
+    },
+    "so.opencompany.events": [
+      {
+        "id": "meeting.completed",
+        "label": "Meeting completed",
+        "description": "Starts a workflow once Jamie has finished a meeting's summary, transcript, and action items.",
+        "delivery": "webhook",
+        "filters": [
+          {
+            "id": "guests",
+            "label": "Guests",
+            "kind": "choice",
+            "required": false,
+            "options": [
+              { "id": "external", "name": "Outside your company" },
+              { "id": "internal", "name": "Internal only" }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
