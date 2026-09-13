@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "granola",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Search and read sensitive meeting notes, folders, summaries, and transcripts through Granola's official MCP server.",
   "author": {
     "name": "opencompany",
@@ -36,7 +36,15 @@
         "label": "Meeting notes ready",
         "description": "Starts a workflow once Granola finishes the AI summary for a meeting.",
         "delivery": "poll",
-        "filters": []
+        "filters": [
+          {
+            "id": "folder",
+            "label": "Folder",
+            "kind": "integration_resource",
+            "resourceType": "folder",
+            "required": false
+          }
+        ]
       }
     ]
   }
