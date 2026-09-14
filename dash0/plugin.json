@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "dash0",
-  "version": "1.0.0",
-  "description": "Query Dash0 telemetry and review Agent0 investigations in the AWS Ireland region.",
+  "version": "1.0.1",
+  "description": "Query Dash0 telemetry and review Agent0 investigations in your organization.",
   "author": {
     "name": "opencompany",
     "url": "https://opencompany.com"
