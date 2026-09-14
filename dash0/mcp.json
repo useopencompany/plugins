@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "dash0": {
+      "type": "streamable-http",
+      "url": "https://api.eu-west-1.aws.dash0.com/mcp"
+    }
+  }
+}

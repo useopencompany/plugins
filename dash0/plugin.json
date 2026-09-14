@@ -1,0 +1,51 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dash0",
+  "version": "1.0.0",
+  "description": "Query Dash0 telemetry and review Agent0 investigations in the AWS Ireland region.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://www.dash0.com/hub/integrations/int_dash0_mcp/overview",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/dash0",
+  "license": "MIT",
+  "keywords": [
+    "dash0",
+    "observability",
+    "logs",
+    "metrics",
+    "traces"
+  ],
+  "extensions": {
+    "so.opencompany.capabilities": {
+      "query": {
+        "label": "Inspect observability data",
+        "defaultMode": "ask",
+        "tools": [
+          "listDatasets",
+          "getMetricQuery",
+          "getLogRecords",
+          "getFailedChecks"
+        ]
+      },
+      "investigations": {
+        "label": "Read Agent0 investigations",
+        "defaultMode": "ask",
+        "tools": [
+          "waitForTask",
+          "getAgent0ThreadStatus",
+          "getAgent0ThreadContent",
+          "listAgent0Threads"
+        ]
+      },
+      "delegate": {
+        "label": "Run paid Agent0 investigations",
+        "defaultMode": "off",
+        "tools": [
+          "runTask"
+        ]
+      }
+    }
+  }
+}
