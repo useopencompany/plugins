@@ -38,8 +38,8 @@ employee range: those change the result set and the bill more than anything else
 - **Chasing one named person** — `lead.search_people_by_name` to find them, then
   `lead.get_linkedin_contact` only if you need the full profile.
 - **Getting a work email** — `lead.find_person_email`. Pass the LinkedIn URL when you have it;
-  otherwise pass the full name with the company. This bills per lookup whether or not an email
-  is found, so never fan it out across a whole list without asking first.
+  otherwise pass the full name with the company. This bills per lookup that finds an email, so a
+  miss is free — but never fan it out across a whole list without asking first.
 
 ## Sequence the work
 
@@ -60,6 +60,8 @@ When the user wants the list somewhere durable, offer to write it to the CRM or 
 rather than leaving it in chat.
 
 ## Cost discipline
+
+You are charged only for results. A lookup that finds nothing, or that fails, costs nothing.
 
 - State the expected cost before a large run, and stop at the size the user agreed to.
 - Never re-run a lookup you already ran in this session; reuse the earlier result.
