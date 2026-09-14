@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "gmail",
-  "version": "1.2.0",
-  "description": "Search and read Gmail, download attachments, create drafts, and organize messages through opencompany's Gmail MCP.",
+  "version": "1.3.0",
+  "description": "Search and read Gmail, download attachments, create drafts, send email, and organize messages through opencompany's Gmail MCP.",
   "author": {
     "name": "opencompany",
     "url": "https://opencompany.com"
@@ -10,7 +10,7 @@
   "homepage": "https://github.com/useopencompany/plugins/tree/main/gmail",
   "repository": "https://github.com/useopencompany/plugins/tree/main/gmail",
   "license": "MIT",
-  "keywords": ["gmail", "email", "google-workspace", "drafts", "labels"],
+  "keywords": ["gmail", "email", "google-workspace", "drafts", "send", "labels"],
   "extensions": {
     "so.opencompany.capabilities": {
       "query": {
@@ -32,9 +32,10 @@
         "tools": ["create_draft"]
       },
       "write": {
-        "label": "Organize Gmail",
+        "label": "Send & organize Gmail",
         "defaultMode": "ask",
         "tools": [
+          "send_email",
           "label_thread",
           "unlabel_thread",
           "trash_thread",
