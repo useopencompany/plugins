@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lead-research",
+  "version": "1.0.0",
+  "description": "Find companies and people that match an ICP, and get the work emails needed to reach them.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://github.com/useopencompany/plugins/tree/main/lead-research",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/lead-research",
+  "license": "MIT",
+  "keywords": ["leads", "prospecting", "icp", "gtm", "sales", "outbound"],
+  "extensions": {
+    "so.opencompany.pricing": {
+      "currency": "USD",
+      "actions": {
+        "search_prospects": {
+          "label": "Prospect found",
+          "unit": "per_result",
+          "amountUsdMicros": 80000
+        },
+        "list_company_employees": {
+          "label": "Employee found",
+          "unit": "per_result",
+          "amountUsdMicros": 50000
+        },
+        "search_people_by_name": {
+          "label": "Person found",
+          "unit": "per_result",
+          "amountUsdMicros": 50000
+        },
+        "get_linkedin_contact": {
+          "label": "Profile enriched",
+          "unit": "per_result",
+          "amountUsdMicros": 100000
+        },
+        "find_person_email": {
+          "label": "Email lookup",
+          "unit": "per_call",
+          "amountUsdMicros": 150000
+        }
+      }
+    }
+  }
+}

@@ -25,6 +25,7 @@ commit SHA so installation is reproducible and reviewable.
 | Infisical | `https://github.com/useopencompany/plugins/tree/main/infisical` |
 | Jamie | `https://github.com/useopencompany/plugins/tree/main/jamie` |
 | Latitude | `https://github.com/useopencompany/plugins/tree/main/latitude` |
+| Lead Research | `https://github.com/useopencompany/plugins/tree/main/lead-research` |
 | Linear | `https://github.com/useopencompany/plugins/tree/main/linear` |
 | Neon | `https://github.com/useopencompany/plugins/tree/main/neon` |
 | Notion | `https://github.com/useopencompany/plugins/tree/main/notion` |
