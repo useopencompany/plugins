@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "convex",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Inspect deployments, query data, and run Convex functions with permission controls.",
   "author": {
     "name": "opencompany",
@@ -14,7 +14,8 @@
     "convex",
     "database",
     "functions",
-    "deployment"
+    "deployment",
+    "errors"
   ],
   "extensions": {
     "so.opencompany.capabilities": {
@@ -53,6 +54,40 @@
           "envRemove"
         ]
       }
-    }
+    },
+    "so.opencompany.events": [
+      {
+        "id": "function.failed",
+        "label": "Function failed",
+        "description": "Starts a workflow when a function in the connected Convex deployment fails. Repeat failures of the same function are grouped so one incident starts one run.",
+        "delivery": "webhook",
+        "filters": [
+          {
+            "id": "function_type",
+            "label": "Function type",
+            "kind": "choice",
+            "required": false,
+            "options": [
+              {
+                "id": "query",
+                "name": "Query"
+              },
+              {
+                "id": "mutation",
+                "name": "Mutation"
+              },
+              {
+                "id": "action",
+                "name": "Action"
+              },
+              {
+                "id": "http_action",
+                "name": "HTTP action"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
