@@ -29,7 +29,7 @@
           "getFailedChecks"
         ]
       },
-      "investigations": {
+      "read": {
         "label": "Read Agent0 investigations",
         "defaultMode": "ask",
         "tools": [
@@ -39,7 +39,7 @@
           "listAgent0Threads"
         ]
       },
-      "delegate": {
+      "write": {
         "label": "Run paid Agent0 investigations",
         "defaultMode": "off",
         "tools": [
