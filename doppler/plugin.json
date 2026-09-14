@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "doppler",
+  "version": "1.0.0",
+  "description": "Run existing Doppler development scripts with the authenticated sandbox CLI.",
+  "author": { "name": "opencompany", "url": "https://opencompany.com" },
+  "homepage": "https://docs.doppler.com/docs/cli",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/doppler",
+  "license": "MIT",
+  "keywords": ["doppler", "secrets", "development", "sandbox"]
+}
