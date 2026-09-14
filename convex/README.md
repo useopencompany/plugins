@@ -17,6 +17,19 @@ Changing a permission to On does not relax this restriction. Development deploym
 can use the other tools within the key's Convex permissions. The insights tool is
 unavailable with deploy-key authentication and is omitted.
 
+## Events
+
+The package declares one webhook event, `function.failed`, which fires when a function in the
+connected deployment fails. opencompany creates a Convex webhook log stream for the deployment
+with the deploy key already stored for this plugin, subscribed to the `verification` and
+`function_execution` topics only, and verifies every delivery's HMAC-SHA256 signature. Log
+streams require a Convex Pro plan, and the deploy key needs `deployment:integrations:write`.
+
+Repeat failures of the same function with the same error are grouped, so a function failing
+continuously starts one workflow run per grouping window rather than one per failed execution.
+The optional `function_type` filter narrows a trigger to queries, mutations, actions, or HTTP
+actions.
+
 The bridge supplies deployment selection: tools do not accept project directories or
 Convex deployment selectors. The deploy key is encrypted server-side and supplied only
 to the pinned official CLI. The package contains no credentials or executable code.
@@ -25,3 +38,4 @@ an unauthenticated public Convex MCP server.
 
 Reviewed metadata: live `tools/list` from `convex@1.45.0`, September 9, 2026.
 Source: https://docs.convex.dev/ai/convex-mcp-server
+Event source: https://docs.convex.dev/production/integrations/log-streams/
