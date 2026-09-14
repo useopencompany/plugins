@@ -13,6 +13,7 @@ commit SHA so installation is reproducible and reviewable.
 | GitHub | `https://github.com/useopencompany/plugins/tree/main/github` |
 | Convex | `https://github.com/useopencompany/plugins/tree/main/convex` |
 | Better Stack | `https://github.com/useopencompany/plugins/tree/main/betterstack` |
+| Dash0 | `https://github.com/useopencompany/plugins/tree/main/dash0` |
 | Fathom | `https://github.com/useopencompany/plugins/tree/main/fathom` |
 | Gmail | `https://github.com/useopencompany/plugins/tree/main/gmail` |
 | Granola | `https://github.com/useopencompany/plugins/tree/main/granola` |
