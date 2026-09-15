@@ -1,0 +1,93 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "todoist",
+  "version": "1.0.0",
+  "description": "Read and organize Todoist tasks, projects, and comments, with approval for changes.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://www.todoist.com/help/articles/todoist-mcp-server",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/todoist",
+  "license": "MIT",
+  "keywords": [
+    "todoist",
+    "tasks",
+    "todo",
+    "project-management",
+    "productivity"
+  ],
+  "extensions": {
+    "so.opencompany.capabilities": {
+      "read": {
+        "label": "Read tasks and projects",
+        "defaultMode": "on",
+        "tools": [
+          "find-tasks",
+          "find-tasks-by-date",
+          "find-completed-tasks",
+          "find-projects",
+          "find-sections",
+          "find-comments",
+          "find-reminders",
+          "find-labels",
+          "find-filters",
+          "get-overview",
+          "fetch-object",
+          "user-info",
+          "search",
+          "fetch"
+        ]
+      },
+      "query": {
+        "label": "Read activity history, analytics, and attachments",
+        "defaultMode": "ask",
+        "tools": [
+          "find-activity",
+          "get-productivity-stats",
+          "get-project-health",
+          "get-project-activity-stats",
+          "get-workspace-insights",
+          "list-workspaces",
+          "find-project-collaborators",
+          "view-attachment",
+          "export-project-template"
+        ]
+      },
+      "write": {
+        "label": "Create and change Todoist items",
+        "defaultMode": "ask",
+        "tools": [
+          "add-tasks",
+          "update-tasks",
+          "complete-tasks",
+          "uncomplete-tasks",
+          "reschedule-tasks",
+          "add-projects",
+          "update-projects",
+          "project-management",
+          "project-move",
+          "add-sections",
+          "update-sections",
+          "add-comments",
+          "update-comments",
+          "add-reminders",
+          "update-reminders",
+          "add-labels",
+          "update-labels",
+          "add-filters",
+          "update-filters",
+          "manage-assignments",
+          "reorder-objects",
+          "analyze-project-health",
+          "import-project-template"
+        ]
+      },
+      "draft": {
+        "label": "Permanently delete Todoist items",
+        "defaultMode": "off",
+        "tools": ["delete-object"]
+      }
+    }
+  }
+}
