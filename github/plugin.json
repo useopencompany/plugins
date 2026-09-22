@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "github",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Work with repositories, issues, pull requests, and Actions through your GitHub account.",
   "author": {
     "name": "opencompany",
@@ -9,7 +9,7 @@
   },
   "repository": "https://github.com/useopencompany/plugins/tree/main/github",
   "license": "MIT",
-  "keywords": ["github", "repositories", "issues", "pull-requests", "actions"],
+  "keywords": ["github", "repositories", "issues", "pull-requests", "actions", "events"],
   "extensions": {
     "so.opencompany.capabilities": {
       "read": {
@@ -65,6 +65,15 @@
           "update_pull_request_branch"
         ]
       }
-    }
+    },
+    "so.opencompany.events": [
+      {
+        "id": "pull_request.opened",
+        "label": "Pull request opened",
+        "description": "Starts a workflow when a pull request is opened ready for review or a draft is marked ready.",
+        "delivery": "webhook",
+        "filters": []
+      }
+    ]
   }
 }
