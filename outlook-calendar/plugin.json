@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "outlook-calendar",
+  "version": "1.0.0",
+  "description": "Read Microsoft calendars, check availability, manage events, and respond to meeting invitations through Microsoft Graph.",
+  "author": {
+    "name": "opencompany",
+    "url": "https://opencompany.com"
+  },
+  "homepage": "https://github.com/useopencompany/plugins/tree/main/outlook-calendar",
+  "repository": "https://github.com/useopencompany/plugins/tree/main/outlook-calendar",
+  "license": "MIT",
+  "keywords": [
+    "outlook",
+    "microsoft-365",
+    "microsoft-graph",
+    "calendar"
+  ],
+  "extensions": {
+    "so.opencompany.capabilities": {
+      "query": {
+        "label": "Read calendars",
+        "defaultMode": "ask",
+        "tools": [
+          "list_calendars",
+          "list_events",
+          "get_event",
+          "check_availability",
+          "get_schedule"
+        ]
+      },
+      "write": {
+        "label": "Manage events",
+        "defaultMode": "ask",
+        "tools": [
+          "create_event",
+          "update_event",
+          "delete_event",
+          "respond_to_invite"
+        ]
+      }
+    }
+  }
+}
